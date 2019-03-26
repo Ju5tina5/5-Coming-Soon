@@ -5,44 +5,136 @@ body * {
     vertical-align: top;
     box-sizing: border-box;
 }
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .hero-background {
     background-color: #75C6FB;
 }
 .hero-content {
-    width: 500x;
-    margin: 40px calc((100% - 500px) / 2) 20px;
+    width: 800x;
+    margin: 40px calc((100% - 800px) / 2) 20px;
     display: inline-block;
+    text-align: center;
 }
+    #hero.hero-content > * {
+        display: inline-block;
+        width: 100%;
+    }
 
     #hero .logo {
-        
+        background-image: url(../Img/Logo.png);
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
     }
     #hero h1 {
-        
+        text-transform: uppercase;
+        margin: 40px 0 20px;
+        font-size: 40px;
+        line-height: 40px;
     }
     #hero p {
-        
+        margin: 0 0 20px;
+        font-size: 16px;
+        line-height: 20px;
+        color:  #777;
+        display: inline-block;
+        width: 100%;
     }
     #hero .clock {
-        
+        margin: 40px 0 60px 0;
     }
         #hero .clock > .clock-block {
+            display: inline-block;
+            float: left;
+            width: 25%;
+            padding-bottom: 30px;
 
         }
             #hero .clock > .clock-block > .value {
+                font-size: 30px;
+                color: white;
 
             }
             #hero .clock > .clock-block > .title {
-                
+                font-size: 30px;
+                color: white;
+
             }
 
     #hero form {
         
-        }
-        #hero .form > input{
+    }
+        #hero form > input {
+            width: 90%;
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 20px;
+            padding: 10px 0px;
+            border: none;
+            border-bottom: 2px solid #fff;
+            background: transparent;
+            color: #fff;
 
         }
-        #hero .form > .btn{
+            #hero form > input::placeholder{
+                color: white;
+            }
+            #hero form > input:focus {
+                outline: none;
+            }
+
+        #hero form > .btn{
+            background-color: #ea1e63;
+            color: #fff;
+            padding: 10px 25px;
+            display: inline-block;
+            box-shadow: -1px 2px 4px rgba(0,0,0,0.3);
+            border-radius: 4px;
+        }
+        #hero form > .btn:hover {
+            background-color: #ad0e44;
+            cursor: pointer;
+        }
+#content {
+    display: inline-block;
+    width: 100%;
+}
+    #content .container {
+        width: 800x;
+        margin: 40px calc((100% - 800px) / 2) 20px;
+        display: inline-block;
+    }
+        #content .container > .left{
+            float: left;
+            width: 60%;
+            padding: 0 20px;
 
         }
+        #content .container > .right{
+            float: right;
+            width: 40%;
+            padding: 0 20px;
+            
+        }
+footer {
+    background-color: #75C6FB;
+    text-align: center;
+
+}
+     footer > .social {
+        width: 800x;
+        margin: 40px calc((100% - 800px) / 2) 20px;
+        display: inline-block;
+        border-bottom: 1px solid #fff;
+    
+    }
+    footer > .social {
+        width: 800x;
+        margin: 0px calc((100% - 800px) / 2) 20px;
+        display: inline-block;
+                
+    }
