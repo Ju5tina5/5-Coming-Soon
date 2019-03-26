@@ -13,7 +13,7 @@ body {
     background-color: #75C6FB;
 }
 .hero-content {
-    width: 800x;
+    width: 800px;
     margin: 40px calc((100% - 800px) / 2) 20px;
     display: inline-block;
     text-align: center;
@@ -104,7 +104,7 @@ body {
     width: 100%;
 }
     #content .container {
-        width: 800x;
+        width: 800px;
         margin: 40px calc((100% - 800px) / 2) 20px;
         display: inline-block;
     }
@@ -126,14 +126,15 @@ footer {
 
 }
      footer > .social {
-        width: 800x;
-        margin: 40px calc((100% - 800px) / 2) 20px;
+        width: 800px;
+        margin: 20px calc((100% - 800px) / 2) 20px;
         display: inline-block;
         border-bottom: 1px solid #fff;
+        padding-bottom: 20px;
     
     }
-    footer > .social {
-        width: 800x;
+    footer > .legal-shit {
+        width: 800px;
         margin: 0px calc((100% - 800px) / 2) 20px;
         display: inline-block;
                 
