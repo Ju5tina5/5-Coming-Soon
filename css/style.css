@@ -11,6 +11,7 @@ body {
 
 .hero-background {
     background-color: #75C6FB;
+    min-height: 100vh;
 }
 .hero-content {
     width: 800px;
@@ -99,6 +100,9 @@ body {
             background-color: #ad0e44;
             cursor: pointer;
         }
+    #hero > .hero-content >.mouse-container {
+        margin-top: 40px;
+    }
 #content {
     display: inline-block;
     width: 100%;
@@ -120,9 +124,16 @@ body {
             padding: 0 20px;
             
         }
+@media ( max-width: 900) {
+    #content .container {
+        width: 540px;
+        margin: 40px calc( (100% - 540px) / 2) 20px;
+    }
+}
 footer {
-    background-color: #75C6FB;
+    background-color: #75C6FB;  
     text-align: center;
+    position: relative;
 
 }
      footer > .social {
@@ -133,9 +144,39 @@ footer {
         padding-bottom: 20px;
     
     }
+        footer > .social >  {
+            display: inline-block;
+            text-decoration: none;
+            color: #FFF;
+            margin: 0 10px;
+            font-size: 20px;
+            padding: 10px;
+            width: 44px;
+        }
+            footer > .social > a:hover {
+                background-color: white;
+                color: #03A9F5;
+                border-radius: 50%; 
+            }
+        footer > .social > .back-to-top {
+            font-size: 30px;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            line-height: 35px;
+            color: #FFF;
+            text-decoration: none;
+            background-color: #EA1D62;
+            border-radius: 50%;
+            position: absolute;
+            top: -25px;
+            right: 80px;
+        }
+            
     footer > .legal-shit {
         width: 800px;
-        margin: 0px calc((100% - 800px) / 2) 20px;
+        margin: 0 calc((100% - 800px) / 2) 20px;
         display: inline-block;
                 
     }
+
